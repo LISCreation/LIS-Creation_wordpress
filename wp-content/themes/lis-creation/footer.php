@@ -67,7 +67,7 @@
     $(".callback-form-button").click(function(e){
         e.preventDefault();
         $.ajax({
-            url: 'mail/mail.php', //url страницы (action_ajax_form.php)
+            url: '<?=get_template_directory_uri();?>/assets/mail/mail.php', //url страницы (action_ajax_form.php)
             type: "POST", //метод отправки
             dataType: "html", //формат данных
             data: $("#callback_main").serialize(),  // Сеарилизуем объект
