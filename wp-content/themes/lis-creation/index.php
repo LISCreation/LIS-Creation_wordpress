@@ -4,7 +4,7 @@
     <!--spare_html: Mono Menu-->
     <div class="global-sidebar_up">
         <div class="global-sidebar_up_icon-wrapper">
-            <a href="#toTop" class="anchor"><img class="global-sidebar_icon global-sidebar_up_icon" src="img/icons/up.svg" alt="Вверх"></a>
+            <a href="#toTop" class="anchor"><img class="global-sidebar_icon global-sidebar_up_icon" src="<?=get_template_directory_uri();?>/assets/img/icons/up.svg" alt="Вверх"></a>
         </div>
     </div>
     <div class="global-sidebar_middle">
@@ -36,10 +36,10 @@
     </div>
     <div class="global-sidebar_down">
         <div class="global-sidebar_down_icon-wrapper">
-            <a href="tel:79384067802"><img src="img/icons/call.svg" alt="Позвонить!" class="global-sidebar_icon"></a>
+            <a href="tel:79384067802"><img src="<?=get_template_directory_uri();?>/assets/img/icons/call.svg" alt="Позвонить!" class="global-sidebar_icon"></a>
         </div>
         <div class="global-sidebar_down_icon-wrapper">
-            <a href="mailto:lis.lightinsky@gmail.com"><img src="img/icons/email.svg" alt="Позвонить!" class="global-sidebar_icon"></a>
+            <a href="mailto:lis.lightinsky@gmail.com"><img src="<?=get_template_directory_uri();?>/assets/img/icons/email.svg" alt="Позвонить!" class="global-sidebar_icon"></a>
         </div>
     </div>
 </div>
@@ -68,7 +68,7 @@
         <div class="header-main">
             <div class="header-main_middle">
                 <div class="header-main-logo_wrapper">
-                    <a href="#"><img src="img/logo_lis-creation.png" alt="LIGHT IN SKY Logo" class="header-main-logo logo"></a>
+                    <a href="#"><img src="<?=get_template_directory_uri();?>/assets/img/logo_lis-creation.png" alt="LIGHT IN SKY Logo" class="header-main-logo logo"></a>
                 </div>
                 <h2 class="header-main-chant">Место, где рождаются сайты</h2>
                 <p class="header-main-description">Наличие сайта – это необходимость нашего времени.
@@ -119,9 +119,9 @@
                 </a>
             </li>
         </ul>
-        <img src="img/line.png" alt="" class="header_line">
+        <img src="<?=get_template_directory_uri();?>/assets/img/line.png" alt="" class="header_line">
         <div class="header_mouse__wrapper">
-            <a href="#" class="anchor"><img src="img/icons/mouse.svg" alt="Mouse to down" class="header_mouse"></a>
+            <a href="#" class="anchor"><img src="<?=get_template_directory_uri();?>/assets/img/icons/mouse.svg" alt="Mouse to down" class="header_mouse"></a>
         </div>
     </header>
     <section class="achievements" id="achievements">
@@ -167,7 +167,7 @@
                         <a href="#">
                             <div class="works-list_item" data-name="Advocat-krd.ru" id="left_work">
                                 <img class="work-default" src="https://kwork.ru/pics/t3/21/239064-1.jpg" alt="">
-                                <img class="work-opened" src="img/works/best/1-opened.jpg" alt="">
+                                <img class="work-opened" src="<?=get_template_directory_uri();?>/assets/img/works/best/1-opened.jpg" alt="">
                             </div>
                         </a>
                     </div>
@@ -175,7 +175,7 @@
                         <a href="#">
                             <div class="works-list_item" data-name="Arendatoram.com" id="middle_work">
                                 <img class="work-default" src="https://i.novostroy.su/u/newbuilding/box/b868520e-8ce0-452a-bc31-2c776507d150.jpg" alt="">
-                                <img class="work-opened" src="img/works/best/2-opened.jpg" alt="">
+                                <img class="work-opened" src="<?=get_template_directory_uri();?>/assets/img/works/best/2-opened.jpg" alt="">
                             </div>
                         </a>
                     </div>
@@ -183,13 +183,13 @@
                         <a href="#">
                             <div class="works-list_item" data-name="Copter Force" id="right_work">
                                 <img class="work-default" src="http://souo-mos.ru/wp-content/uploads/2017/11/1-4.jpg" alt="">
-                                <img class="work-opened" src="img/works/best/3-opened.jpg" alt="">
+                                <img class="work-opened" src="<?=get_template_directory_uri();?>/assets/img/works/best/3-opened.jpg" alt="">
                             </div>
                         </a>
                     </div>
                 </div>
             </div>
-            <a class="works-link" href="portfolio.html"><div class="btn_roundness"><div class="btn works-link-button">Смотреть полное портфолио</div></div></a>
+            <a class="works-link" href="<?=get_permalink(9);?>"><div class="btn_roundness"><div class="btn works-link-button">Смотреть полное портфолио</div></div></a>
         </div>
     </section>
     <section class="team" id="team">
@@ -201,7 +201,7 @@
                 <div class="col-xl-5 col-md-6 ml-auto">
                     <div class="team-slider">
                         <div class="team-slider_item">
-                            <img src="img/team/tiger.jpg" title="Alexander" alt="Alexander Front-end dev" class="team-slider_item-image">
+                            <img src="<?=get_template_directory_uri();?>/assets/img/team/tiger.jpg" title="Alexander" alt="Alexander Front-end dev" class="team-slider_item-image">
                             <div class="team-slider_item-info">
                                 <div class="team-slider_item-info__blank">
                                     <h5 class="name">Alexander</h5>
@@ -210,7 +210,7 @@
                             </div>
                         </div>
                         <div class="team-slider_item">
-                            <img src="img/team/lynx.jpg" title="Ekaterina" alt="Ekaterina Designer" class="team-slider_item-image">
+                            <img src="<?=get_template_directory_uri();?>/assets/img/team/lynx.jpg" title="Ekaterina" alt="Ekaterina Designer" class="team-slider_item-image">
                             <div class="team-slider_item-info">
                                 <div class="team-slider_item-info__blank">
                                     <h5 class="name">Ekaterina</h5>
@@ -219,7 +219,7 @@
                             </div>
                         </div>
                         <div class="team-slider_item">
-                            <img src="img/team/panda.jpg" title="Sergei" alt="Sergei Back-end dev" class="team-slider_item-image">
+                            <img src="<?=get_template_directory_uri();?>/assets/img/team/panda.jpg" title="Sergei" alt="Sergei Back-end dev" class="team-slider_item-image">
                             <div class="team-slider_item-info">
                                 <div class="team-slider_item-info__blank">
                                     <h5 class="name">Sergei</h5>
@@ -262,7 +262,7 @@
             <div class="services-list owl-carousel">
                 <article class="services-list_item">
                     <h3 class="services-list_item-title">Landing Page</h3>
-                    <img src="img/services/landing.png" alt="Landing Page by LIS" class="services-list_item-example">
+                    <img src="<?=get_template_directory_uri();?>/assets/img/services/landing.png" alt="Landing Page by LIS" class="services-list_item-example">
                     <p class="services-list_item-price">от <span>21 990</span> р.</p>
                     <ul class="services-list_item-apps">
                         <li class="services-list_item-apps_thing">Адаптивная верстка HTML5/CSS3</li>
@@ -275,7 +275,7 @@
                 </article>
                 <article class="services-list_item">
                     <h3 class="services-list_item-title">Интернет-магазин</h3>
-                    <img src="img/services/ecommerce-shop.png" alt="Landing Page LIS" class="services-list_item-example">
+                    <img src="<?=get_template_directory_uri();?>/assets/img/services/ecommerce-shop.png" alt="Landing Page LIS" class="services-list_item-example">
                     <p class="services-list_item-price">от <span>32 990</span> р.</p>
                     <ul class="services-list_item-apps">
                         <li class="services-list_item-apps_thing">Адаптивная верстка HTML5/CSS3</li>
@@ -288,7 +288,7 @@
                 </article>
                 <article class="services-list_item">
                     <h3 class="services-list_item-title">Блог / Информационный сайт</h3>
-                    <img src="img/services/example.png" alt="Landing Page LIS" class="services-list_item-example">
+                    <img src="<?=get_template_directory_uri();?>/assets/img/services/example.png" alt="Landing Page LIS" class="services-list_item-example">
                     <p class="services-list_item-price">от <span>27 990</span> р.</p>
                     <ul class="services-list_item-apps">
                         <li class="services-list_item-apps_thing">Адаптивная верстка HTML5/CSS3</li>
@@ -301,7 +301,7 @@
                 </article>
                 <article class="services-list_item">
                     <h3 class="services-list_item-title">Корпоративный сайт</h3>
-                    <img src="img/services/example.png" alt="Landing Page LIS" class="services-list_item-example">
+                    <img src="<?=get_template_directory_uri();?>/assets/img/services/example.png" alt="Landing Page LIS" class="services-list_item-example">
                     <p class="services-list_item-price">от <span>29 990</span> р.</p>
                     <ul class="services-list_item-apps">
                         <li class="services-list_item-apps_thing">Адаптивная верстка HTML5/CSS3</li>
@@ -314,7 +314,7 @@
                 </article>
                 <article class="services-list_item">
                     <h3 class="services-list_item-title">Промо-сайт</h3>
-                    <img src="img/services/example.png" alt="Landing Page LIS" class="services-list_item-example">
+                    <img src="<?=get_template_directory_uri();?>/assets/img/services/example.png" alt="Landing Page LIS" class="services-list_item-example">
                     <p class="services-list_item-price">от <span>21 990</span> р.</p>
                     <ul class="services-list_item-apps">
                         <li class="services-list_item-apps_thing">Адаптивная верстка HTML5/CSS3</li>
@@ -327,7 +327,7 @@
                 </article>
                 <article class="services-list_item">
                     <h3 class="services-list_item-title">Сайт-визитка</h3>
-                    <img src="img/services/visit.png" alt="Landing Page LIS" class="services-list_item-example">
+                    <img src="<?=get_template_directory_uri();?>/assets/img/services/visit.png" alt="Landing Page LIS" class="services-list_item-example">
                     <p class="services-list_item-price">от <span>24 990</span> р.</p>
                     <ul class="services-list_item-apps">
                         <li class="services-list_item-apps_thing">Адаптивная верстка HTML5/CSS3</li>
@@ -350,25 +350,25 @@
                 <div class="row">
                     <div class="col-sm-6 col-lg-3">
                         <div class="why-offers_item">
-                            <div class="why-offers_item-icon__wrapper"><img src="img/why/brainstorming.svg" alt="" class="why-offers_item-icon"></div>
+                            <div class="why-offers_item-icon__wrapper"><img src="<?=get_template_directory_uri();?>/assets/img/why/brainstorming.svg" alt="" class="why-offers_item-icon"></div>
                             <p class="why-offers_item-text">Для нас не существует трудностей, есть только интересные задачи</p>
                         </div>
                     </div>
                     <div class="col-sm-6 col-lg-3">
                         <div class="why-offers_item">
-                            <div class="why-offers_item-icon__wrapper"><img src="img/why/target.svg" alt="" class="why-offers_item-icon"></div>
+                            <div class="why-offers_item-icon__wrapper"><img src="<?=get_template_directory_uri();?>/assets/img/why/target.svg" alt="" class="why-offers_item-icon"></div>
                             <p class="why-offers_item-text">К каждому проекту и к каждой задаче у нас индивидуальный, эффективный подход</p>
                         </div>
                     </div>
                     <div class="col-sm-6 col-lg-3">
                         <div class="why-offers_item">
-                            <div class="why-offers_item-icon__wrapper"><img src="img/why/html.svg" alt="" class="why-offers_item-icon"></div>
+                            <div class="why-offers_item-icon__wrapper"><img src="<?=get_template_directory_uri();?>/assets/img/why/html.svg" alt="" class="why-offers_item-icon"></div>
                             <p class="why-offers_item-text">Мы знаем как создать уникальный и продающий сайт для любой отрасли</p>
                         </div>
                     </div>
                     <div class="col-sm-6 col-lg-3">
                         <div class="why-offers_item">
-                            <div class="why-offers_item-icon__wrapper"><img src="img/why/quality.svg" alt="" class="why-offers_item-icon"></div>
+                            <div class="why-offers_item-icon__wrapper"><img src="<?=get_template_directory_uri();?>/assets/img/why/quality.svg" alt="" class="why-offers_item-icon"></div>
                             <p class="why-offers_item-text">Нам нравится создавать то, что имеет ценность для других людей</p>
                         </div>
                     </div>

@@ -60,8 +60,9 @@
         </div>
     </footer>
 </div>
-<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
+<!-- <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="js/owl.carousel.min.js"></script> 
+<script src="js/main.min.js"></script> -->
 <script>
     $(".callback-form-button").click(function(e){
         e.preventDefault();
@@ -77,6 +78,5 @@
         $(this).removeClass('callback-form-button');
     });
 </script>
-<script src="js/main.min.js"></script>
 </body>
 </html>
