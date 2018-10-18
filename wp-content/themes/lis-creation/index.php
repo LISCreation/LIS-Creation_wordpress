@@ -45,7 +45,7 @@
 </div>
 <div class="global-wrapper">
     <header class="header" id="header">
-        <nav class="header-menu">
+        <!-- <nav class="header-menu">
             <ul class="header-menu-list">
                 <li class="header-menu-list_item"><a href="#">Главная</a></li>
                 <li class="header-menu-list_item"><a href="#">Работы</a></li>
@@ -63,7 +63,17 @@
                     </div>
                 </li>
             </ul>
-        </nav>
+        </nav> -->
+        <?php
+            wp_nav_menu(array(
+                'theme_location'  => 'main',
+                'menu'            => '', 
+                'container'       => 'nav', 
+                'container_class' => 'header-menu', 
+                'menu_class'      => 'header-menu-list',
+                'walker'          => new MyWalker()
+            ));
+        ?>
         <h1 class="header-main-title">Light In Sky</h1>
         <div class="header-main">
             <div class="header-main_middle">
