@@ -1496,6 +1496,7 @@ body.work {
 }
 .work {
   background: url(../img/light.jpg) no-repeat top / cover;
+  min-height: 100vh;
   color: #ffffff;
 }
 .work a {
