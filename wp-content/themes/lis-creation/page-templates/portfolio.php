@@ -5,62 +5,25 @@
 ?>
 <?php get_header().wp_head();?>
 <body class="clearfix">
-<div class="global-sidebar">
-    <!--spare_html: Mono Menu-->
-    <div class="global-sidebar_up">
-        <div class="global-sidebar_up_icon-wrapper">
-            <img class="global-sidebar_icon global-sidebar_up_icon" src="<?=get_template_directory_uri();?>/assets/img/icons/up.svg" alt="Вверх">
-        </div>
-    </div>
-    <div class="global-sidebar_middle">
-        <nav class="mono">
-            <div class="mono-menu">
-                <div class="mono-menu_item">
-                    <a href="#"><div class="tab">Начало экрана</div></a>
-                </div>
-                <div class="mono-menu_item">
-                    <a href="#"><div class="tab">Начало экрана 2</div></a>
-                </div>
-                <div class="mono-menu_item">
-                    <a href="#"><div class="tab">Начало экрана Начало экрана</div></a>
-                </div>
-                <div class="mono-menu_item">
-                    <a href="#"><div class="tab">Начало экрана Начало экранаНачало экрана</div></a>
-                </div>
-                <div class="mono-menu_item">
-                    <a href="#"><div class="tab">Начало экрана Начало экрана</div></a>
-                </div>
-                <div class="mono-menu_item">
-                    <a href="#"><div class="tab">Начало экрана 32</div></a>
-                </div>
-            </div>
-        </nav>
-    </div>
-    <div class="global-sidebar_down">
-        <div class="global-sidebar_down_icon-wrapper">
-            <img src="<?=get_template_directory_uri();?>/assets/img/icons/call.svg" alt="Позвонить!" class="global-sidebar_icon">
-        </div>
-        <div class="global-sidebar_down_icon-wrapper">
-            <img src="<?=get_template_directory_uri();?>/assets/img/icons/email.svg" alt="Позвонить!" class="global-sidebar_icon">
-        </div>
-    </div>
-</div>
+<?php get_template_part('template-parts/block_sidebar', 'portfolio');?>
 <div class="global-wrapper">
     <section class="header portfolio" id="header">
         <div class="portfolio_background"></div>
         <div class="container-fluid">
-            <nav class="header-menu">
-                <ul class="header-menu-list">
-                    <li class="header-menu-list_item"><a href="#">Главная</a></li>
-                    <li class="header-menu-list_item current"><a href="#">Работы</a></li>
-                    <li class="header-menu-list_item"><a href="#">Акции</a></li>
-                    <li class="header-menu-list_item"><a href="#">Услуги</a></li>
-                </ul>
-            </nav>
+	        <?php
+	        wp_nav_menu(array(
+		        'theme_location'  => 'main',
+		        'menu'            => '',
+		        'container'       => 'nav',
+		        'container_class' => 'header-menu',
+		        'menu_class'      => 'header-menu-list',
+		        'walker'          => new MyWalker()
+	        ));
+	        ?>
             <div class="header-main">
                 <div class="header-main_middle">
                     <div class="header-main-logo_wrapper">
-                        <a href="#"><img src="<?=get_template_directory_uri();?>/assets/img/logo_lis-creation.png" alt="LIGHT IN SKY Logo" class="header-main-logo logo"></a>
+                        <a href="<?php the_permalink();?>"><img src="<?=get_template_directory_uri();?>/assets/img/logo_lis-creation.png" alt="LIGHT IN SKY Logo" class="header-main-logo logo"></a>
                     </div>
                     <h2 class="header-main-chant">Портфолио</h2>
                     <p class="header-main-description">Здесь расположены не просто наши работы,
