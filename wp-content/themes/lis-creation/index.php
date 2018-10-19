@@ -17,7 +17,7 @@
         <div class="header-main">
             <div class="header-main_middle">
                 <div class="header-main-logo_wrapper">
-                    <a href="#"><img src="<?=get_template_directory_uri();?>/assets/img/logo_lis-creation.png" alt="LIGHT IN SKY Logo" class="header-main-logo logo"></a>
+                    <a href="<?php the_permalink();?>"><img src="<?=get_template_directory_uri();?>/assets/img/logo_lis-creation.png" alt="LIGHT IN SKY Logo" title="Перезагрузить страницу" class="header-main-logo logo"></a>
                 </div>
                 <h2 class="header-main-chant">Место, где рождаются сайты</h2>
                 <p class="header-main-description">Наличие сайта – это необходимость нашего времени.
