@@ -508,7 +508,7 @@ body.work {
   right: auto;
   width: 100%;
 }
-.header-menu-list > li.current::after {
+.header-menu-list > li.current-menu-item::after {
   width: 100%;
 }
 .header-menu-list > li.menu-item-has-children {
@@ -570,10 +570,10 @@ body.work {
   -o-transition: all ease .2s;
   transition: all ease .2s;
 }
-.header-menu-list > li .submenu li.active {
+.header-menu-list > li .submenu li.current-menu-item {
   background-color: #f48f45;
 }
-.header-menu-list > li .submenu li.active a {
+.header-menu-list > li .submenu li.current-menu-item a {
   color: #fff;
 }
 .header-menu-list > li .submenu li a {

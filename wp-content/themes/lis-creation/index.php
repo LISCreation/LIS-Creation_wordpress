@@ -45,25 +45,6 @@
 </div>
 <div class="global-wrapper">
     <header class="header" id="header">
-        <!-- <nav class="header-menu">
-            <ul class="header-menu-list">
-                <li class="header-menu-list_item"><a href="#">Главная</a></li>
-                <li class="header-menu-list_item"><a href="#">Работы</a></li>
-                <li class="header-menu-list_item has-children">
-                    Услуги
-                    <div class="submenu_wrapper">
-                        <ul class="submenu">
-                            <li class="submenu_item"><a href="#">Landing Page</a></li>
-                            <li class="submenu_item active"><a href="#">Сайт-визитка</a></li>
-                            <li class="submenu_item"><a href="#">Интернет-магазин</a></li>
-                            <li class="submenu_item"><a href="#">Корпоративный сайт</a></li>
-                            <li class="submenu_item"><a href="#">Промо-сайт</a></li>
-                            <li class="submenu_item"><a href="#">Блог</a></li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
-        </nav> -->
         <?php
             wp_nav_menu(array(
                 'theme_location'  => 'main',
@@ -134,7 +115,7 @@
             <a href="#" class="anchor"><img src="<?=get_template_directory_uri();?>/assets/img/icons/mouse.svg" alt="Mouse to down" class="header_mouse"></a>
         </div>
     </header>
-    <section class="achievements" id="achievements">
+    <section class="achievements anchor_section" id="achievements">
         <div class="container">
             <div class="section-info">
                 <h2 class="section-header">О нас в цифрах</h2>
@@ -163,7 +144,7 @@
             </div>
         </div>
     </section>
-    <section class="works" id="works">
+    <section class="works anchor_section" id="works">
         <div class="container">
             <div class="section-info">
                 <h2 class="section-header">лучшие работы</h2>
@@ -202,7 +183,7 @@
             <a class="works-link" href="<?=get_permalink(9);?>"><div class="btn_roundness"><div class="btn works-link-button">Смотреть полное портфолио</div></div></a>
         </div>
     </section>
-    <section class="team" id="team">
+    <section class="team anchor_section" id="team">
         <div class="container-fluid">
             <div class="section-info d-block d-md-none">
                 <h2 class="section-header team-header">Наша команда</h2>
@@ -262,7 +243,7 @@
         </div>
     </section>
     <?php get_template_part('template-parts/section_service', 'main');?>
-    <section class="why" id="why">
+    <section class="why anchor_section" id="why">
         <div class="container">
             <div class="section-info">
                 <h2 class="section-header">почему именно мы?</h2>

@@ -1,4 +1,4 @@
-<section class="callback" id="callback">
+<section class="callback anchor_section" id="callback">
 	<div class="container">
 		<div class="section-info">
 			<h2 class="section-header">свяжитесь с нами</h2>

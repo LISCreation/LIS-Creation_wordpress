@@ -1,4 +1,4 @@
-<section class="services" id="services">
+<section class="services anchor_section" id="services">
 	<div class="container-fluid p-0">
 		<div class="section-info">
 			<h2 class="section-header">наши услуги</h2>
