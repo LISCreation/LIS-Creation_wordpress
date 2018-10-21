@@ -194,7 +194,7 @@
                             Хотите продающий сайт? Теперь вы знаете к кому
                             обращаться!</p>
                     </div>
-                    <a class="works-link" href="<?=get_permalink(9);?>"><div class="btn_roundness btn_roundness-reverse"><div class="btn btn-reverse team-button">Наши кейсы</div></div></a>
+                    <a class="works-link anchor" href="#callback"><div class="btn_roundness btn_roundness-reverse"><div class="btn btn-reverse team-button">Связаться</div></div></a>
                 </div>
 
             </div>

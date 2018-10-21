@@ -15,77 +15,48 @@
 		</div>
 	</div>
 </div>
+<?php $service_id = carbon_get_post_meta($post->ID, 'site_type');?>
 <div class="global-wrapper work-wrapper">
 	<header class="work-header">
 		<div class="work-header-init_wrapper">
 			<div class="work-header-init">
-				<h5 class="work-header-init_service">Разработка сайта под ключ</h5>
-				<h1 class="work-header-init_title">коттеджный поселок “лесной пейзаж”</h1>
+				<h5 class="work-header-init_service"><?php the_content();?></h5>
+				<h1 class="work-header-init_title"><?php the_title();?></h1>
 			</div>
 		</div>
 		<div class="work-header-init__list">
-			<div class="work-header-init_link"><a href="https://advocat-krd.ru" rel="nofollow" target="_blank">https://advocat-krd.ru</a></div>
+			<div class="work-header-init_link"><a href="<?=carbon_get_post_meta($post->ID, 'site_link');?>" rel="nofollow" target="_blank"><?=carbon_get_post_meta($post->ID, 'site_link');?></a></div>
 			<div class="work-header-init_want">
-				<div class="btn_roundness btn_roundness-reverse"><div class="btn works-link-button work-header-init_click">Хочу такой же!</div></div>
+				<div class="btn_roundness btn_roundness-reverse"><a href="<?php the_permalink($service_id);?>"><div class="btn works-link-button work-header-init_click">Хочу такой же!</div></a></div>
 			</div>
 			<div class="work-header-init_type">
-				<p>Тип сайта: <a href="#">Landing Page</a></p>
+				<p>Тип сайта: <a href="<?php the_permalink($service_id);?>"><?=get_the_title($service_id);?></a></p>
 			</div>
 		</div>
 		<div class="work-header-slider">
 			<div class="work-header-slider_area owl-carousel">
-				<div class="work-header-slider_item">
+				<?php
+				$gallery = carbon_get_post_meta($post->ID, 'site_gallery', 'complex');
+				foreach($gallery as $gallery_item) {
+					echo "<div class='work-header-slider_item'>
+					    <img src='{$gallery_item['gallery_image']}' class='back' alt='work back'>
+					    <img src='{$gallery_item['gallery_image']}' class='front' alt='work front'>
+				    </div>";
+                }
+				?>
+                <!--<div class="work-header-slider_item">
 					<img src="https://klubputeshestvennikov.com/wp-content/uploads/2017/01/Los-Anzheles-9.jpg" class="back" alt="LIS creation work">
 					<img src="https://klubputeshestvennikov.com/wp-content/uploads/2017/01/Los-Anzheles-9.jpg" class="front" alt="LIS creation work">
-				</div>
-				<div class="work-header-slider_item">
-					<img src="<?=get_template_directory_uri();?>/assets/img/les.jpg" class="back" alt="LIS creation work">
-					<img src="<?=get_template_directory_uri();?>/assets/img/les.jpg" class="front" alt="LIS creation work">
-				</div>
-				<div class="work-header-slider_item">
-					<img src="https://cs9.pikabu.ru/post_<?=get_template_directory_uri();?>/assets/img/2017/08/08/7/og_og_1502191127255817837.jpg" class="back" alt="LIS creation work">
-					<img src="https://cs9.pikabu.ru/post_<?=get_template_directory_uri();?>/assets/img/2017/08/08/7/og_og_1502191127255817837.jpg" class="front" alt="LIS creation work">
-				</div>
-				<div class="work-header-slider_item">
-					<img src="http://ftp.fisti.ru/sites/default/files/files/images/fisti_ru_22489.jpg" class="back" alt="LIS creation work">
-					<img src="http://ftp.fisti.ru/sites/default/files/files/images/fisti_ru_22489.jpg" class="front" alt="LIS creation work">
-				</div>
-				<div class="work-header-slider_item">
-					<img src="<?=get_template_directory_uri();?>/assets/img/les.jpg" class="back" alt="LIS creation work">
-					<img src="<?=get_template_directory_uri();?>/assets/img/les.jpg" class="front" alt="LIS creation work">
-				</div>
+				</div>-->
 			</div>
 		</div>
 		<div class="work-header-list_wrapper">
 			<button class="work-header_more"><img src="<?=get_template_directory_uri();?>/assets/img/icons/arrow-down.svg" alt=""><p>Что мы сделали?</p></button>
 			<ul class="work-header-list">
-				<li class="work-header-list_item">Создание ТЗ, анализ рынка и конкурентов</li>
-				<li class="work-header-list_item">Разработка структуры сайта, создание детального прототипа</li>
-				<li class="work-header-list_item">Разрботка и создание уникального дизайна сайта</li>
-				<li class="work-header-list_item">Адаптивная и кроссбраузерная верстка сайта</li>
-				<li class="work-header-list_item">Установка на хостинг</li>
-				<li class="work-header-list_item">SEO оптимизация</li>
-
-				<li class="work-header-list_item">Создание ТЗ, анализ рынка и конкурентов</li>
-				<li class="work-header-list_item">Разработка структуры сайта, создание детального прототипа</li>
-				<li class="work-header-list_item">Разрботка и создание уникального дизайна сайта</li>
-				<li class="work-header-list_item">Адаптивная и кроссбраузерная верстка сайта</li>
-				<li class="work-header-list_item">Установка на хостинг</li>
-				<li class="work-header-list_item">SEO оптимизация</li>
-				<li class="work-header-list_item">Создание ТЗ, анализ рынка и конкурентов</li>
-				<li class="work-header-list_item">Разработка структуры сайта, создание детального прототипа</li>
-				<li class="work-header-list_item">Разрботка и создание уникального дизайна сайта</li>
-				<li class="work-header-list_item">Адаптивная и кроссбраузерная верстка сайта</li>
-				<li class="work-header-list_item">Установка на хостинг</li>
-				<li class="work-header-list_item">SEO оптимизация</li>
-
-				<li class="work-header-list_item">Создание ТЗ, анализ рынка и конкурентов</li>
-				<li class="work-header-list_item">Разработка структуры сайта, создание детального прототипа</li>
-				<li class="work-header-list_item">Разрботка и создание уникального дизайна сайта</li>
-				<li class="work-header-list_item">Адаптивная и кроссбраузерная верстка сайта</li>
-				<li class="work-header-list_item">Установка на хостинг</li>
-				<li class="work-header-list_item">SEO оптимизация</li>
-
+                <?php
+                $tasks_list = carbon_get_post_meta($post->ID, 'site_tasks', 'complex');
+                foreach($tasks_list as $task_item) echo "<li class='work-header-list_item'>$task_item[task]</li>";
+                ?>
 			</ul>
 		</div>
 	</header>

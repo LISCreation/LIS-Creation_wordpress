@@ -39,7 +39,7 @@ function register_custom_ptypes() {
 		'edit_item' => 'Редактировать работу',
 		'new_item' => 'Новая работа',
 		'all_items' => 'Общее портфолио',
-		'view_item' => 'Просмотр работ на сайте',
+		'view_item' => 'Открыть страницу работы',
 		'search_items' => 'Искать работы',
 		'not_found' =>  'Работ не найдено.',
 		'not_found_in_trash' => 'В корзине нет работ.',
@@ -94,3 +94,4 @@ function create_taxonomy(){
 		'show_in_quick_edit'    => null, // по умолчанию значение show_ui
 	) );
 }
+require 'inc/cb-fields.php';
