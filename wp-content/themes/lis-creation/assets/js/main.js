@@ -80,4 +80,8 @@ $(document).ready(function() {
         }
         $('html, body').animate({scrollTop: offset}, 1200);
     }
+
+    $(function() {
+        $.scrollSpeed(120, 1200);
+    });
 });

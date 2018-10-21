@@ -1,6 +1,6 @@
 #Global .idea ignore#
 .idea
 ./**/.idea
-
+./**/.idea/*
 #WP Uploads
 wp-content/uploads

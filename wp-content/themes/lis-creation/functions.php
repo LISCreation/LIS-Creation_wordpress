@@ -15,6 +15,7 @@ function add_self_scripts() {
 	wp_register_script('jquery', '//code.jquery.com/jquery-3.3.1.min.js', array(), null, true);
 	wp_enqueue_script('jquery');
 	wp_enqueue_script('owl-carousel', get_template_directory_uri().'/assets/js/owl.carousel.min.js', array(), null, true);
+	wp_enqueue_script('scroll_speed', get_template_directory_uri().'/assets/js/jQuery.scrollSpeed.js', array(), null, true);
 	wp_enqueue_script('main', get_template_directory_uri().'/assets/js/main.min.js', array(), null, true);
 }
 function register_main_nav_menu() {
