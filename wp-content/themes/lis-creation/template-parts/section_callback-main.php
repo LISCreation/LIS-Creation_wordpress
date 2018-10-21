@@ -1,7 +1,7 @@
 <section class="callback anchor_section" id="callback">
 	<div class="container">
 		<div class="section-info">
-			<h2 class="section-header">свяжитесь с нами</h2>
+			<h2 class="section-header">обратный звонок</h2>
 			<p class="section-description">Заполните форму и мы с Вами свяжемся
 				в ближайшее время!</p>
 		</div>
