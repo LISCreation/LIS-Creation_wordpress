@@ -236,5 +236,5 @@
             </div>
         </div>
     </section>
-<?php get_template_part('template-parts/secion_callback', 'main');?>
+<?php get_template_part('template-parts/section_callback', 'main');?>
 <?php wp_footer().get_footer();?>
