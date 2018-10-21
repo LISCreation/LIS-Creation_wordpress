@@ -1,4 +1,12 @@
 <?php
+add_action('template_redirect', 'self_redirects');
+function self_redirects() {
+	if(is_page(37)) {
+		wp_redirect(get_permalink(17));
+		exit;
+	}
+}
+remove_filter( 'the_content', 'wpautop' );
 add_action('wp_enqueue_scripts', 'add_self_styles');
 add_action('wp_enqueue_scripts', 'add_self_scripts');
 add_action('after_setup_theme', 'register_main_nav_menu');
