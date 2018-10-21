@@ -1902,7 +1902,7 @@ body.work {
   min-width: 250px;
 }
 .serv .listing {
-  padding-top: 120px;
+  padding-top: 90px;
 }
 .serv .listing-list_item {
   text-align: center;
@@ -1954,6 +1954,9 @@ body.work {
   right: -150px;
   width: 800px;
 }
+.serv .services {
+  padding-top: 90px;
+}
 .serv.another .serv-header-main .title {
   font-size: 30px;
 }
@@ -1977,6 +1980,13 @@ body.work {
   bottom: -80px;
   width: 50%;
 }
+.serv.blog .process-image_wrapper {
+  width: 600px;
+  bottom: -40px;
+}
+.serv.shop .process-image_wrapper {
+  bottom: -200px;
+}
 @media (max-width: 1585px) {
   .serv-header-image {
     width: 100%;
@@ -1996,6 +2006,9 @@ body.work {
     width: 50%;
   }
   .serv.corp .process-image_wrapper {
+    width: 50%;
+  }
+  .serv.blog .process-image_wrapper {
     width: 50%;
   }
 }
